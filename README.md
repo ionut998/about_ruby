@@ -1,4 +1,4 @@
-# Ruby for Non-Rubyists
+# Ruby for newbies
 
 This is a short blog post about Ruby, intended to inform developers from other programming backgrounds, the differing concepts of the language. 
 
@@ -551,12 +551,18 @@ The `&` calls `to_proc` on the object, and passes it as a block to the method.
 > [:inspect, :length, :size, :to_proc...
 ```
 
-#### True, False and nil are objects as well
+#### True, False and Nil are objects as well
 
 ```ruby
 true.class  # TrueClass
 false.class # FalseClass
 nil.class   # NilClass
+```
+#### Casting an empty string to integer returns 0
+
+```ruby
+''.to_i
+> 0
 ```
 
 # Ruby songs
