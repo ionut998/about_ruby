@@ -14,17 +14,17 @@ This is a short blog post about Ruby, intended to inform developers from other p
 
 https://www.ruby-lang.org/en/
 
-# Ruby specific concepts
+## Ruby specific concepts
 
-## Block
+### Block
 A chunk of code that can be passed to a method. Blocks can be defined by a do/end statement or curly brackets {} and arguments can be passed to them by using the `|` operator. Blocks can be passed to methods but they cannot be saved into variables.
 
-### Single line:
+#### Single line:
 ```ruby
 [1, 2, 3].each { |n| puts n }
 ```
 
-### Multi-line:
+#### Multi-line:
 ```ruby
 [1, 2, 3].each do |n|
   puts n
@@ -86,7 +86,7 @@ test { next; puts 'hello' }
 https://makandracards.com/makandra/46939-ruby-a-small-summary-of-what-return-break-and-next-means-for-blocks
 
 
-## Proc
+### Proc
 A proc is an object that contains a code block. Proc (short for procedure) provides a way to save up a code block and execute it later. 
 
 
@@ -98,7 +98,7 @@ proc1.call("World")
 > Hello World
 ```
 
-## Lamda
+### Lamda
 Same as Procs with a few differences outlined below
 
 ```ruby
