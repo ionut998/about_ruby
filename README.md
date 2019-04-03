@@ -563,6 +563,10 @@ nil.class   # NilClass
 ```ruby
 ''.to_i
 > 0
+
+0.to_s
+=> "0"
+
 ```
 
 # Ruby songs
