@@ -98,7 +98,7 @@ proc1.call("World")
 > Hello World
 ```
 
-### Lamda
+### Lambda
 Same as Procs with a few differences outlined below
 
 ```ruby
@@ -120,7 +120,7 @@ class User < ActiveRecord::Base
   validate :active, if: lambda { status.active? }
 ```
 
-## Differences between Lanbdas and Procs
+## Differences between Lambdas and Procs
 
 ### How arguments are handled
 For lambdas the number of arguments matters while for Procs they don't
