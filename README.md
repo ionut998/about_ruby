@@ -302,7 +302,7 @@ https://www.culttt.com/2015/06/17/what-is-monkey-patching-in-ruby/
 # Enumerable
 The Enumerable mixin provides collection classes like arrays, hashes, series with traversal, searching and sorting functionality.
 
-#### select
+#### .select
 Select filters out the elements from a collection and returns only the matching elements
 ```ruby
 [1,2,3,4,5].select { |n|  n < 4  }
@@ -316,7 +316,7 @@ Select filters out the elements from a collection and returns only the matching 
 > [{:text=>"one", :number=>1}, {:text=>"two", :number=>2}]
 ```
 
-#### find
+#### .find
 The same as select, it filters out the elements from a collection but it returns only the first matching element
 ```ruby
 [1,2,3,4,5].find{ |n|  n < 4  }
@@ -330,7 +330,7 @@ The same as select, it filters out the elements from a collection but it returns
 > {:text=>"two", :number=>2}
 ```
 
-#### reject
+#### .reject
 Filters out the elements from a collection and returns the non matching elements.
 ```ruby
 [1,2,3,4,5].reject { |n|  n < 4  }
@@ -340,7 +340,7 @@ numbers.reject{ |n| n[:number] < 3}
 > [{:text=>"three", :number=>3}]
 ```
 
-#### uniq
+#### .uniq
 Removes duplicates from a collection
 ```ruby
 [1,2,3,4,4,5].uniq
@@ -354,7 +354,7 @@ Removes duplicates from a collection
 ].uniq
 > [{:text=>"one", :number=>1}, {:text=>"two", :number=>2}, {:text=>"three", :number=>3}]
 ```
-#### any?
+#### .any?
 Retuns true if any of the elements from the collection satisfy the condition.
 ```ruby
 [1,2,3,4,5].any?{|n| n > 2}
